@@ -1,0 +1,12 @@
+/venv/
+/.idea/
+logs/
+*.log
+__pycache__/
+monitor_logs/
+
+.env
+.vscode/
+test.py
+*.envfile
+kafka-liveness-consumer/

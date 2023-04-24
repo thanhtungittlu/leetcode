@@ -11,3 +11,7 @@ def test_2():
 
 def test_3():
     assert maxSubArray([5, 4, -1, 7, 8]) == 23
+
+
+def test_4():
+    assert maxSubArray([-5, -4, -1, 0, -8]) == 0

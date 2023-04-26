@@ -12,7 +12,7 @@ def longestPalindrome(s):
 
     result = 0
     flag = False
-    for _, value in char_to_count.items():
+    for value in char_to_count.values():
         if value % 2 == 0:
             result += value
         else:

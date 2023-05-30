@@ -17,5 +17,5 @@ def maxSubArray(nums):
     return max_sum
 
 
-# Kadane algorithm: Khởi tạo 2 tổng ban đầu, rồi lặp qua các phần tử của mảng. Nếu phần tử đấy mà <0 thì reser curent_sum về 0
+# Kadane algorithm: Khởi tạo 2 tổng ban đầu, rồi lặp qua các phần tử của mảng. Nếu tổng phần tử đấy mà <0 thì reser curent_sum về 0
 maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])

@@ -3,7 +3,7 @@ def maxSubArray(nums):
     :type nums: List[int]
     :rtype: int
     """
-    max_sum = 0
+    max_sum = nums[0]
     curr_sum = 0
 
     for num in nums:

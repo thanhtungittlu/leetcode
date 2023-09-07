@@ -8,18 +8,16 @@ def reverseVowels(s):
     left = 0
     right = len(arrayS) - 1
     while left <= right:
-        isReverse = False
         if arrayS[left] in vowels:
-            while isReverse == False:
-                if arrayS[right] in vowels:
-                    arrayS[left], arrayS[right] = arrayS[right], arrayS[left]
-                    isReverse = True
-                right -= 1   
-                if right == left:
-                    break
-        left += 1
-    res = ''.join(arrayS)
-    return res
+            if arrayS[right] in vowels:
+                arrayS[left],arrayS[right] = arrayS[right],arrayS[left]
+                left+=1
+                right-=1
+            else:
+                right-=1
+        else:
+            left+=1
+    return ''.join(arrayS)
 
 
 s = "hello"

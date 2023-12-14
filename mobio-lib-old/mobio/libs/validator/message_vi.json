@@ -1,0 +1,67 @@
+{
+  "validator": {
+    "err_message": "xác nhận không thành công",
+    "not_message": "xác nhận không thành công"
+  },
+  "in": {
+    "err_message": "phải là một trong %r",
+    "not_message": "không được là một trong %r"
+  },
+  "range": {
+    "err_message": "phải nằm giữa %s và %s",
+    "not_message": "không được nằm giữa %s và %s"
+  },
+  "equals": {
+    "err_message": "phải bằng %r",
+    "not_message": "không được bằng %r"
+  },
+  "blank": {
+    "err_message": "phải là một chuỗi rỗng",
+    "not_message": "không được là một chuỗi rỗng"
+  },
+  "truthy": {
+    "err_message": "phải là giá trị True-equivalent",
+    "not_message": "phải là giá trị False-equivalent"
+  },
+  "instance_of": {
+    "err_message": "phải là một thể hiện của %s hoặc các lớp con của nó",
+    "not_message": "không phải là một thể hiện của %s hoặc các lớp con của nó"
+  },
+  "subclass_of": {
+    "err_message": "phải là một phân lớp của %s",
+    "not_message": "không phải là một phân lớp của %s"
+  },
+  "pattern": {
+    "err_message": "phải phù hợp với mô hình regex %s",
+    "not_message": "không được khớp với mẫu regex %s"
+  },
+  "length": {
+    "maximum": "chiều dài tối đa phải không vượt quá {0} phần tử",
+    "minimum": "chiều dài thiểu phải ít nhất là {0} phần tử",
+    "range": "chiều dài {0} nằm giữa {1} và {2} phần tử"
+  },
+  "contains": {
+    "err_message": "phải chứa {0}",
+    "not_message": "không được chứa {0}"
+  },
+  "phone_number": {
+    "err_message": "phải phù hợp với mô hình mẫu regex ví dụ (098) 883 0588 hoặc (098) .883.0588 hoặc (098) -883-0588 hoặc 098-883-0588 hoặc 098 883 0588 hoặc 0988830588",
+    "not_message": "không được khớp với mẫu regex %s"
+  },
+  "email": {
+    "err_message": "phải phù hợp với mẫu regex ví dụ lytuananh2003@gmail.com",
+    "not_message": "không được khớp với mẫu regex %s"
+  },
+  "date_time": {
+    "err_message": "phải phù hợp với mô hình mẫu regex ví dụ 2017-04-30 19:59:00",
+    "not_message": "không được khớp với mẫu regex %s"
+  },
+  "unicode": {
+    "err_message": "phải là giá trị unicode",
+    "not_message": "không phải là giá trị unicode"
+  },
+  "password": {
+    "err_message": "Mật khẩu mới, cần mật khẩu: chứa ít nhất 8 ký tự, chứa ít nhất một số, Chứa ít nhất 1 chữ thường (az), chứa ít nhất 1 chữ hoa (AZ), chỉ chứa 0-9a- zA-Z mẫu: %s",
+    "not_message": "Mật khẩu mới không hợp lệ, mật khẩu không cần thiết: chứa ít nhất 8 ký tự, chứa ít nhất một số, Chứa ít nhất 1 chữ thường (az), chứa ít nhất 1 chữ hoa (AZ), chỉ chứa 0-9a -zA-Z mẫu: %s"
+  }
+}

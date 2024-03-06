@@ -22,7 +22,7 @@ def search(nums: list, target: int) -> int:
     
     return -1
 
-nums = [4,5,6,7,0,1,2]
+nums = [7,0,1,2,4,5,6]
 target = 0
 
 

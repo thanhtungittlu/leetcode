@@ -1,3 +1,5 @@
+from heapq import heappush, heappop
+
 
 # def maximum_number_of_transactions_possible(transaction):
 #     res = 0
@@ -18,17 +20,30 @@
 
 
 def maximum_number_of_transactions_possible(transactions):
-    balance = 0
-    max_transactions = 0
-    transactions.sort(reverse=True)
+    """
+    Finds the maximum number of transactions possible while maintaining a non-negative balance.
 
-    for t in transactions:
-        if balance + t >= 0:
-            balance += t
-            max_transactions += 1
+    Args:
+        transactions: A list of integers representing transaction amounts.
 
-    return max_transactions
+    Returns:
+        The maximum number of transactions possible.
+    """
+
+    sum_, ans, pq = 0, 0, []
+    for transaction in transactions:
+        sum_ += transaction
+        ans += 1
+        if transaction < 0:
+            heappush(pq, transaction)  # Add negative transactions to min-heap
+
+        while sum_ < 0 and pq:  # Remove negative transactions if sum becomes negative
+            min_element = heappop(pq)
+            sum_ -= min_element
+            ans -= 1
+
+    return ans
 
 
-transaction = [1, 2, 3, 4, -10, -1, -2, -3, -4, 5]
+transaction = [1, 2, 3, 4, -10, -11, -12, -3, 5]
 print(maximum_number_of_transactions_possible(transaction))

@@ -1,4 +1,4 @@
-Leetcode: 
+Hackkerrank: 
 
 In a day, an account holder at HackerBank wants to make n transactions. In each transaction, money is either sent (negative amount) or received (positive amount). Given n transactions, the transactions occur in order from transaction 1 through transaction n, but transactions may be skipped. The balance starts at 0 and is the running sum of the selected transactions. It can never go negative.
 

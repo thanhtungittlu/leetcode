@@ -45,5 +45,19 @@ def maximum_number_of_transactions_possible(transactions):
     return ans
 
 
+# def maximum_number_of_transactions_possible(transaction):
+#     sum_, res, hq = 0, 0, []
+#     for trans in transaction:
+#         sum_ += trans
+#         res += 1
+#         if trans < 0:
+#             heappush(hq, trans)
+#         while sum_ < 0 and hq:
+#             min_ele = heappop(hq)  # Phần tử âm bé nhất
+#             sum_ -= min_ele
+#             res -= 1
+#     return res
+
+
 transaction = [1, 2, 3, 4, -10, -11, -12, -3, 5]
 print(maximum_number_of_transactions_possible(transaction))

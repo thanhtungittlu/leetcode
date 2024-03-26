@@ -18,6 +18,7 @@
 #         res += 1
 #     return res
 
+# Tư tưởng là phần tử  nếu có sẽ nằm trong khoảng từ 0->n
 def firstMissingPositive(nums: list) -> int:
     for i in range(len(nums)):
         current = nums[i]
@@ -33,5 +34,5 @@ def firstMissingPositive(nums: list) -> int:
     return len(nums) + 1
 
 
-nums = [0, 2, 2, 1, 1]
+nums = [3, 4, -1, 1]
 print(firstMissingPositive(nums))

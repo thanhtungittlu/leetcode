@@ -18,7 +18,11 @@ Example 3:
 Input: nums = [7,8,9,11,12]
 Output: 1
 Explanation: The smallest positive integer 1 is missing.
- 
+
+Ex4:
+input: nums = [0,2,2,1,1]
+output: 3
+
 Constraints:
 
 1 <= nums.length <= 105
